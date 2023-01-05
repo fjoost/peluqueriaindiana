@@ -12,9 +12,9 @@
 
 /* Colors */
 :root {
-  --color-default: #212529;
-  --color-primary: rgb(252 232 159);
-  --color-secondary: #37373f;
+  --color-default: #253649;
+  --color-primary: #fce38a;
+  --color-secondary: #47688d;
 }
 
 /* Smooth scroll behavior */
@@ -36,7 +36,7 @@ a {
 }
 
 a:hover {
-  color: #ec2727;
+  color: #fbd758;
   text-decoration: none;
 }
 
@@ -1530,9 +1530,11 @@ section {
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  background-size: cover;
-  position: relative;
-  min-height: 60vh;
+  background-image: url(/assets/img/trabajo-indiana0.jpg);
+  background-position: center;
+  background-size:cover;
+  position:relative;
+  min-height: 100vh;
   padding: 160px 0 60px 0;
 }
 
@@ -1554,56 +1556,9 @@ section {
   margin-bottom: 30px;
 }
 
-.hero .btn-book-a-table {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 36px;
-  border-radius: 50px;
-  transition: 0.5s;
-  color: #212529;
-  background: var(--color-primary);
-  box-shadow: 0 8px 28px rgb(252, 232, 159, 0.2);
-}
-
-.hero .btn-book-a-table:hover {
-  background: #212529;
-  color: rgb(252 232 159);
-}
-
-.hero .btn-watch-video {
-  font-size: 16px;
-  transition: 0.5s;
-  margin-left: 25px;
-  color: var(--font-secondary);
-  font-weight: 600;
-}
-
-.hero .btn-watch-video i {
-  color: var(--color-primary);
-  font-size: 32px;
-  transition: 0.3s;
-  line-height: 0;
-  margin-right: 8px;
-}
-
-.hero .btn-watch-video:hover {
-  color: var(--color-primary);
-}
-
-.hero .btn-watch-video:hover i {
-  color: rgba(206, 18, 18, 0.8);
-}
-
 @media (max-width: 640px) {
   .hero h2 {
     font-size: 36px;
-  }
-
-  .hero .btn-get-started,
-  .hero .btn-watch-video {
-    font-size: 14px;
   }
 }
 
