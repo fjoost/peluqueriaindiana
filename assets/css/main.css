@@ -1,8 +1,10 @@
 /* Fonts */
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* --font-primary: "Amatic SC", sans-serif; */
-  --font-primary:  sans-serif;
+  --font-primary: sans-serif;
   --font-secondary: "Inter", sans-serif;
 }
 
@@ -63,8 +65,8 @@ section {
 }
 
 .section-header h2 {
-  font-size: 13px;
-  letter-spacing: 1px;
+  font-size: 25px;
+  letter-spacing: 3px;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -95,7 +97,7 @@ section {
   bottom: 25px;
   z-index: 99999;
   background: #198754;
-  background: #128C7E;
+  background: #128c7e;
   width: 50px;
   height: 50px;
   border-radius: 50px;
@@ -109,7 +111,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: #25D366
+  background: #25d366;
 }
 
 .scroll-top.active {
@@ -195,11 +197,11 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  background: #fff;
+  background: #f9e396;
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
-  border-bottom: 1px solid #fff;
+  /* border-bottom: 1px solid #fff; */
 }
 
 @media (max-width: 575px) {
@@ -214,7 +216,7 @@ section {
 }
 
 .header .logo img {
-  max-height: 77px;
+  max-height: 79px;
   margin-right: 6px;
 }
 
@@ -237,6 +239,8 @@ section {
   background: var(--color-primary);
   padding: 8px 20px;
   margin-left: 30px;
+  border-color: rgba(54, 80, 106, 0.8);
+  border-style: solid;
   border-radius: 50px;
   transition: 0.3s;
 }
@@ -271,7 +275,7 @@ section {
     position: relative;
   }
 
-  .navbar>ul>li {
+  .navbar > ul > li {
     white-space: nowrap;
     padding: 10px 0 10px 28px;
   }
@@ -298,7 +302,7 @@ section {
     margin-left: 5px;
   }
 
-  .navbar>ul>li>a:before {
+  .navbar > ul > li > a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -312,7 +316,7 @@ section {
   }
 
   .navbar a:hover:before,
-  .navbar li:hover>a:before,
+  .navbar li:hover > a:before,
   .navbar .active:before {
     visibility: visible;
     width: 100%;
@@ -321,7 +325,7 @@ section {
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>a {
+  .navbar li:hover > a {
     color: #000;
   }
 
@@ -358,11 +362,11 @@ section {
 
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
-  .navbar .dropdown ul li:hover>a {
+  .navbar .dropdown ul li:hover > a {
     color: var(--color-primary);
   }
 
-  .navbar .dropdown:hover>ul {
+  .navbar .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -374,7 +378,7 @@ section {
     visibility: hidden;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: 100%;
@@ -387,13 +391,12 @@ section {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
 
 @media (min-width: 1280px) {
-
   .mobile-nav-show,
   .mobile-nav-hide {
     display: none;
@@ -450,7 +453,7 @@ section {
   }
 
   .navbar a:hover,
-  .navbar li:hover>a {
+  .navbar li:hover > a {
     color: #000;
   }
 
@@ -470,8 +473,8 @@ section {
     border: 1px solid #eee;
   }
 
-  .navbar .dropdown>.dropdown-active,
-  .navbar .dropdown .dropdown>.dropdown-active {
+  .navbar .dropdown > .dropdown-active,
+  .navbar .dropdown .dropdown > .dropdown-active {
     display: block;
   }
 
@@ -568,7 +571,7 @@ section {
 }
 
 .menu .tab-content .tab-header {
-  padding: 30px 0;
+  padding: 25px;
 }
 
 .menu .tab-content .tab-header p {
@@ -590,8 +593,7 @@ section {
 }
 
 .menu .tab-content .menu-item .menu-img {
-  padding: 0 60px;
-  margin-bottom: 15px;
+  border-radius: 300px;
 }
 
 .menu .tab-content .menu-item h4 {
@@ -607,6 +609,9 @@ section {
   font-family: var(--font-secondary);
   color: #8d8d9b;
   margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-align: justify;
 }
 
 .menu .tab-content .menu-item .price {
@@ -685,7 +690,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -738,7 +743,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: var(--color-primary);
   border: 0;
   padding: 12px 40px;
@@ -747,7 +752,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #fbd758;
 }
 
@@ -768,8 +773,8 @@ section {
   width: 100%;
   background-image: url(/assets/img/trabajo-indiana0.jpg);
   background-position: center;
-  background-size:cover;
-  position:relative;
+  background-size: cover;
+  position: relative;
   min-height: 100vh;
   padding: 160px 0 60px 0;
 }
@@ -886,4 +891,45 @@ section {
 
 .footer .credits a {
   color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+.gallery {
+  overflow: hidden;
+}
+
+.gallery .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.gallery .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #d1d1d7;
+  opacity: 1;
+}
+
+.gallery .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
+}
+
+.gallery .swiper-slide-active {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .gallery .swiper-wrapper {
+    padding: 40px 0;
+  }
+
+  .gallery .swiper-slide-active {
+    border: 6px solid var(--color-primary);
+    padding: 4px;
+    background: #fff;
+    z-index: 1;
+    transform: scale(1.2);
+  }
 }
