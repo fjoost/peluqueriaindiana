@@ -11,7 +11,7 @@
 /* Colors */
 :root {
   --color-default: #253649;
-  --color-primary: #fce38a;
+  --color-primary: rgb(252, 227, 138);
   --color-secondary: #47688d;
 }
 
@@ -206,7 +206,7 @@ section {
 
 @media (max-width: 575px) {
   .header {
-    height: 80px;
+    height: 70px;
   }
 }
 
@@ -216,8 +216,8 @@ section {
 }
 
 .header .logo img {
-  max-height: 79px;
-  margin-right: 6px;
+  max-height: 69px;
+  margin-right: 10px;
 }
 
 .header .logo h1 {
@@ -225,6 +225,7 @@ section {
   font-weight: 700;
   color: #000;
   margin: 0;
+  margin-left: 10%;
   font-family: var(--font-secondary);
 }
 
@@ -249,6 +250,30 @@ section {
 .header .btn-book-a-table:focus:hover {
   color: rgb(255, 255, 255);
   background: rgb(54 80 106);
+}
+/* SOLO BTN DE RESERVA */
+.btn-book-a-table,
+.btn-book-a-table:focus {
+  font-size: 23px;
+  font-style: normal;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(54 80 106);
+  background: rgb(252, 227, 138, 0.9);
+  padding: 2px 15px;
+  border-color: rgba(54, 80, 106, 0.5);
+  border-style: solid;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.btn-book-a-table:hover,
+.btn-book-a-table:focus:hover {
+  color: rgb(54 80 106);
+  background: rgb(255, 225, 117);
+  border-color: rgba(54, 80, 106, 0.8);
+  border-style: solid;
+  border-radius: 50px;
+  transition: 0.3s;
 }
 
 section {
@@ -593,7 +618,7 @@ section {
 }
 
 .menu .tab-content .menu-item .menu-img {
-  border-radius: 300px;
+  border-radius: 20px;
 }
 
 .menu .tab-content .menu-item h4 {
@@ -621,152 +646,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Contact Section
---------------------------------------------------------------*/
-.contact .info-item {
-  background: #f4f4f4;
-  padding: 30px;
-  height: 100%;
-}
-
-.contact .info-item .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 56px;
-  height: 56px;
-  font-size: 24px;
-  line-height: 0;
-  color: #fff;
-  background: var(--color-primary);
-  border-radius: 50%;
-  margin-right: 15px;
-}
-
-.contact .info-item h3 {
-  font-size: 20px;
-  color: #6c757d;
-  font-weight: 700;
-  margin: 0 0 5px 0;
-}
-
-.contact .info-item p {
-  padding: 0;
-  margin: 0;
-  line-height: 24px;
-  font-size: 14px;
-}
-
-.contact .info-item .social-links a {
-  font-size: 24px;
-  display: inline-block;
-  color: rgba(55, 55, 63, 0.7);
-  line-height: 1;
-  margin: 4px 6px 0 0;
-  transition: 0.3s;
-}
-
-.contact .info-item .social-links a:hover {
-  color: var(--color-primary);
-}
-
-.contact .php-email-form {
-  width: 100%;
-  margin-top: 30px;
-  background: #fff;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
-}
-
-.contact .php-email-form .form-group {
-  padding-bottom: 20px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #df1529;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #059652;
-  border-top-color: #fff;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-}
-
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--color-primary);
-}
-
-.contact .php-email-form input {
-  height: 48px;
-}
-
-.contact .php-email-form textarea {
-  padding: 10px 12px;
-}
-
-.contact .php-email-form button[type="submit"] {
-  background: var(--color-primary);
-  border: 0;
-  padding: 12px 40px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.contact .php-email-form button[type="submit"]:hover {
-  background: #fbd758;
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
@@ -776,7 +655,7 @@ section {
   background-size: cover;
   position: relative;
   min-height: 100vh;
-  padding: 160px 0 60px 0;
+  padding: 300px 0 60px 0;
 }
 
 .hero h2 {
